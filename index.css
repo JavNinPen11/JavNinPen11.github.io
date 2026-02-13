@@ -12,7 +12,9 @@ html {
     font-size: 2vw;
 
 }
-
+a{
+    color: white;
+}
 body {
     background-image: url(img/FondoPagina.png);
     font-family: "Pixelify Sans", sans-serif;
@@ -123,4 +125,8 @@ nav {
 }
 .proyectos{
     padding: 2vw;
+}
+.contacto{
+    padding: 2vw;
+    margin-bottom: 50vh;
 }
