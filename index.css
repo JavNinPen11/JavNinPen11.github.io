@@ -141,7 +141,7 @@ nav {
     margin-bottom: 50vh;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 700px) {
 
     main {
         width: 100%;
@@ -171,6 +171,8 @@ nav {
         height: auto;
         flex-wrap: wrap;
         padding: 2vw 0;
+        display: flex;
+        justify-content: center;
     }
 
     nav a {
