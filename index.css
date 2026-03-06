@@ -12,9 +12,11 @@ html {
     font-size: 2vw;
 
 }
-a{
+
+a {
     color: white;
 }
+
 body {
     background-image: url(img/FondoPagina.png);
     font-family: "Pixelify Sans", sans-serif;
@@ -22,6 +24,7 @@ body {
     font-weight: 500;
     font-style: normal;
 }
+
 .inicio,
 .competencias,
 .experiencia,
@@ -29,6 +32,7 @@ body {
 .contacto {
     padding-top: 4vw;
 }
+
 h3 {
     font-size: 3vw;
     font-weight: 500;
@@ -99,7 +103,8 @@ nav {
 
     }
 }
-.bar-container{
+
+.bar-container {
     width: 30vw;
     height: 3vw;
     background-color: white;
@@ -107,7 +112,8 @@ nav {
     border-radius: 0.5vw;
     overflow: hidden;
 }
-.progress-bar{
+
+.progress-bar {
     height: 100%;
     width: 0;
     background-color: #F30BF2;
@@ -115,18 +121,105 @@ nav {
     transition: width 1.2s ease;
     position: relative;
 }
-.stats-container{
+
+.stats-container {
     display: flex;
     flex-wrap: wrap;
-    .stats{
+    justify-content: center;
+    /* .stats{
         margin-left: 7vh;
         margin-bottom: 5vh;
-    }
+    } */
 }
-.proyectos{
+
+.proyectos {
     padding: 2vw;
 }
-.contacto{
+
+.contacto {
     padding: 2vw;
     margin-bottom: 50vh;
+}
+
+@media (max-width: 768px) {
+
+    main {
+        width: 100%;
+    }
+
+
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 4vw 0;
+    }
+
+    #logo img {
+        inline-size: 40vw;
+    }
+
+    #titulo {
+        font-size: 6vw;
+    }
+
+    #titulo :nth-child(2) {
+        font-size: 4vw;
+    }
+
+
+    nav {
+        height: auto;
+        flex-wrap: wrap;
+        padding: 2vw 0;
+    }
+
+    nav a {
+        font-size: 4vw;
+        margin: 2vw;
+    }
+
+
+    .inicio,
+    .competencias,
+    .proyectos,
+    .contacto {
+        padding: 6vw;
+    }
+
+
+    .stats-container {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .stats {
+        margin-left: 0;
+        width: 80%;
+    }
+
+    .bar-container {
+        width: 100%;
+        height: 5vw;
+    }
+
+
+    .proyectos .container {
+        padding: 0;
+    }
+
+
+    .contacto .card {
+        width: 90%;
+    }
+
+
+    * {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 6vw;
+    }
+
 }
