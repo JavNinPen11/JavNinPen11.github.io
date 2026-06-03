@@ -225,3 +225,79 @@ nav {
     }
 
 }
+/* Foto de perfil */
+.inicio-content {
+    display: flex;
+    align-items: center;
+    gap: 3vw;
+}
+
+.foto-perfil {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 0.2vw solid #af18e6;
+    box-shadow: 0 0 15px #af18e6;
+    flex-shrink: 0;
+}
+
+/* Formación */
+.formacion {
+    padding-top: 4vw;
+}
+
+.formacion-item {
+    background-color: #1A0623;
+    border-left: 0.3vw solid #F30BF2;
+    padding: 1.5vw 2vw;
+    margin-top: 1vw;
+    border-radius: 0.5vw;
+}
+
+.formacion-titulo {
+    font-size: 1.8vw;
+    color: #f2e0f8;
+    margin-bottom: 0.3vw;
+}
+
+.formacion-centro {
+    color: #BD60DF;
+    margin-bottom: 0.2vw;
+}
+
+.formacion-fecha {
+    color: #aaa;
+    font-size: 1.4vw;
+}
+
+/* Arreglo margen contacto */
+.contacto {
+    padding: 2vw;
+    margin-bottom: 10vh; /* era 50vh, demasiado */
+}
+
+/* Responsive foto y formación */
+@media (max-width: 700px) {
+    .inicio-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .foto-perfil {
+        width: 25vw;
+        height: 25vw;
+    }
+
+    .formacion-titulo {
+        font-size: 4vw;
+    }
+
+    .formacion-fecha {
+        font-size: 3.5vw;
+    }
+
+    .formacion-item {
+        padding: 3vw;
+    }
+}
